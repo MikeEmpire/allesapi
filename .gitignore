@@ -1,0 +1,52 @@
+# Compiled object files, static libraries, and executables
+*.o
+*.a
+*.exe
+
+# Binary dependencies
+/bin
+
+# Go build output
+*.out
+
+# Logs
+*.log
+logs/
+
+# Dependency directories
+/vendor
+/go.sum
+
+# System files
+.DS_Store
+
+# IDE files
+.vscode/
+.idea/
+
+# Configuration files
+/config.yml
+
+# Environment files
+.env
+
+# Database files
+*.db
+*.sqlite
+
+# Ignore all test files
+*_test.go
+
+# Ignore generated files
+*.gen.go
+
+# Ignore binaries, but keep tools
+/tools/**
+!tools/goimports
+
+# Ignore coverage reports
+.coverage/*
+!.coverage/.gitkeep
+
+# Ignore build cache
+.cache
