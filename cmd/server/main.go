@@ -1,9 +1,13 @@
-package main
+package server
 
-import "os"
+import (
+	"os"
+
+	"github.com/mikeempire/allesapi/cmd/app"
+)
 
 func main() {
-	s := App{}
+	s := app.App{}
 	s.Initialize(
 		os.Getenv("APP_DB_USERNAME"),
 		os.Getenv("APP_DB_PASSWORD"),
